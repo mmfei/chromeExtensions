@@ -1,0 +1,17 @@
+{
+	"manifest_version": 2,
+	"name":"MM Html to Markdown 插件",
+	"version":"1.0",
+	"description":"Html 转 Markdown",
+	"browser_action":{
+		"default_icon":"mmMarkdown.jpg",
+		"default_popup":"mmHtml2Markdown.html"
+	},
+	"permissions":[
+		"tabs",
+		"https://*.mmfei.com/"
+	],
+      "background": {
+          "scripts": ["jquery.min.js"] //在点击的页面预加载一些js , 可以直接使用他们的方法
+      }
+}
